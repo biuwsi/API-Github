@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+      discovery:
+        enabled: false
+
+eureka:
+  enabled: false
+
+github:
+  base-url: https://api.github.com
+  templates:
+    MICROSERVICE: url
+
