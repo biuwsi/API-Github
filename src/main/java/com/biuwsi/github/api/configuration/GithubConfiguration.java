@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.Map;
+import java.util.List;
 
 @Data
 @Builder
@@ -16,6 +16,6 @@ import java.util.Map;
 @Configuration
 @ConfigurationProperties("github")
 public class GithubConfiguration {
-    private Map<String, String> templates;
+    private List<TemplateConfiguration> templates;
 
 }
