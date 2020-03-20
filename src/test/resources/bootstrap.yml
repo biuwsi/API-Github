@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+      discovery:
+        enabled: false
+
+eureka:
+  cleint:
+    enabled: false
+
+github:
+  temp-subfolder: github-api
+  templates:
+    - type: MICROSERVICE
+      url: https://github.com/biuwsi/TEMPLATE-Microservice
+      temp-folder: microservice-template
+      branch: master
+  commands:
+    pull: git, pull, origin
+    clone: git, clone
+    checkout: git, checkout
+
+cookiecutter:
+  command: cookiecutter

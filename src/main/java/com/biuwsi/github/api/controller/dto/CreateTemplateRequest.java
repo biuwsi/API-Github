@@ -11,4 +11,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class CreateTemplateRequest {
     private TemplateType type;
+    private String projectName;
+    private String appName;
+    private String mainClassName;
+    private String basePackage;
 }
