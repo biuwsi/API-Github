@@ -13,4 +13,5 @@ import java.util.List;
 @ConfigurationProperties("cookiecutter")
 public class CookiecutterProperties {
     private List<String> command;
+    private List<String> fields;
 }

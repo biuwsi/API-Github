@@ -22,4 +22,11 @@ github:
     checkout: git, checkout
 
 cookiecutter:
-  command: cookiecutter
+  command:
+    - "cookiecutter"
+    - "--no-input"
+  fields:
+    - project_name
+    - app_name
+    - main_class_name
+    - base_package

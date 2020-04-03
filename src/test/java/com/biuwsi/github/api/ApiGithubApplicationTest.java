@@ -17,6 +17,10 @@ class ApiGithubApplicationTest {
     void contextLoads() {
         githubService.createTemplate(CreateTemplateRequest.builder()
                 .type(TemplateType.MICROSERVICE)
+                .field("project_name", "api-test")
+                .field("app_name", "api-test")
+                .field("main_class_name", "ApiTest")
+                .field("base_package", "test.api")
                 .build());
     }
 

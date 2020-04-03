@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Singular;
+
+import java.util.Map;
 
 @Data
 @Builder
@@ -11,8 +14,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class CreateTemplateRequest {
     private TemplateType type;
-    private String projectName;
-    private String appName;
-    private String mainClassName;
-    private String basePackage;
+    @Singular
+    private Map<String, String> fields;
 }
